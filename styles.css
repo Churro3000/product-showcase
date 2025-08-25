@@ -1,3 +1,4 @@
+/* ---------------- GLOBAL STYLES ---------------- */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -5,10 +6,7 @@ body {
   background: #fff; /* white background */
 }
 
-.h1 {
-  background-colour: #75BFEC;
-}
-
+/* ---------------- HEADER ---------------- */
 header {
   text-align: center;
   padding: 1rem;
@@ -16,6 +14,7 @@ header {
   color: white;
 }
 
+/* ---------------- PRODUCT GRID ---------------- */
 .product-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Always 3 per row */
@@ -23,11 +22,12 @@ header {
   padding: 0.75rem;
 }
 
+/* ---------------- PRODUCT CARD ---------------- */
 .product {
   background: #fefefe;
-  border: 2px solid black; /* border for each product */
+  border: 2px solid black; /* product border */
+  border-radius: 8px; /* slightly rounded edges */
   padding: 0.75rem;
-  border-radius: 6px;
   text-align: center;
   font-size: 0.9rem;
   transition: transform 0.2s ease;
@@ -40,27 +40,27 @@ header {
 .product img {
   width: 100%;
   height: auto;
-  border-radius: 4px;
+  border-radius: 6px;
   margin-bottom: 0.5rem;
 }
 
-/* Buttons styled in brand colors */
+/* ---------------- BUTTON ---------------- */
 .inquire-btn {
   display: inline-block;
   margin-top: 0.5rem;
   padding: 0.5rem 1rem;
-  font-size: 0.85rem;
-  border: none;
-  border-radius: 4px;
+  font-size: 0.9rem;
+  border-radius: 6px;
   cursor: pointer;
-  color: white;
   text-decoration: none;
+  background: yellow;         /* button fill color */
+  color: black;               /* text color */
+  border: 2px solid red;      /* red border */
+  font-weight: bold;
+  transition: 0.2s ease;
 }
 
-.inquire-red { background: red; }
-.inquire-yellow { background: goldenrod; }
-.inquire-green { background: green; }
-
 .inquire-btn:hover {
-  opacity: 0.9;
+  background: gold;           /* darker yellow on hover */
+  transform: scale(1.05);     /* slight pop-out effect */
 }
