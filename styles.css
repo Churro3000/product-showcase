@@ -5,6 +5,10 @@ body {
   background: #fff; /* white background */
 }
 
+.h1 {
+  background-colour: #75BFEC;
+}
+
 header {
   text-align: center;
   padding: 1rem;
