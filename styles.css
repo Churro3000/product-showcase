@@ -2,32 +2,61 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background: #fff; /* white background */
 }
 
 header {
   text-align: center;
   padding: 1rem;
-  background: #222;
+  background: #87cefa; /* light blue */
   color: white;
 }
 
 .product-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Always 3 per row */
-  gap: 0.5rem;
-  padding: 0.5rem;
+  gap: 0.75rem;
+  padding: 0.75rem;
 }
 
 .product {
-  background: #f4f4f4;
-  padding: 0.5rem;
+  background: #fefefe;
+  border: 2px solid black; /* border for each product */
+  padding: 0.75rem;
   border-radius: 6px;
   text-align: center;
-  font-size: 0.9rem; /* slightly smaller text for mobile */
+  font-size: 0.9rem;
+  transition: transform 0.2s ease;
+}
+
+.product:hover {
+  transform: translateY(-3px);
 }
 
 .product img {
   width: 100%;
   height: auto;
   border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+/* Buttons styled in brand colors */
+.inquire-btn {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+
+.inquire-red { background: red; }
+.inquire-yellow { background: goldenrod; }
+.inquire-green { background: green; }
+
+.inquire-btn:hover {
+  opacity: 0.9;
 }
