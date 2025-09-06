@@ -53,14 +53,19 @@ header {
   border-radius: 6px;
   cursor: pointer;
   text-decoration: none;
-  background: yellow;         /* button fill color */
-  color: black;               /* text color */
-  border: 2px solid red;      /* red border */
+  
+  /* WhatsApp-like gradient background */
+  background: linear-gradient(135deg, #37FD12, #0A6522);
+  
+  color: white;               /* white text */
+  border: none;               /* remove border */
   font-weight: bold;
   transition: 0.2s ease;
 }
 
 .inquire-btn:hover {
-  background: gold;           /* darker yellow on hover */
-  transform: scale(1.05);     /* slight pop-out effect */
+  opacity: 0.9;               /* slight fade on hover */
+  transform: scale(1.05);     /* small zoom effect */
 }
+
+
