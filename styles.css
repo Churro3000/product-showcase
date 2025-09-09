@@ -59,6 +59,7 @@ header {
   transition: 0.2s ease;
 }
 
+
 .inquire-btn:hover {
   opacity: 0.9;
   transform: scale(1.05);
