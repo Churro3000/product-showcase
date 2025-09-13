@@ -18,10 +18,10 @@ header {
 .product-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* 2 per row */
-  gap: 1rem; /* more space between cards */
+  gap: 1rem;
   padding: 1rem;
-  max-width: 1200px; /* keeps them from stretching too wide on big screens */
-  margin: 0 auto; /* center the grid */
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* ---------------- PRODUCT CARD ---------------- */
@@ -42,23 +42,27 @@ header {
 
 .product-card img {
   width: 100%;
-  max-height: 180px;            /* prevents images from being too tall */
-  object-fit: cover;            /* keeps image proportion inside box */
+  height: auto;                 /* keep proportions */
+  max-height: 200px;            /* keep consistent sizing */
+  object-fit: contain;          /* show whole image */
   border-radius: 8px;
   margin-bottom: 0.5rem;
+  background: #f0f0f0;          /* light grey background for images with whitespace */
+  padding: 4px;                 /* small padding around image */
+  box-sizing: border-box;
 }
 
 /* ---------------- INQUIRE BUTTON ---------------- */
 .inquire-btn {
-  display: block;               /* full width */
-  width: 100%;                  /* stretch to card width */
-  margin-top: 0.5rem;
-  padding: 0.6rem;
+  display: inline-block;        /* not full width */
+  width: 90%;                   /* slightly smaller than card */
+  margin: 0.5rem auto 0;        /* center it */
+  padding: 0.5rem;
   font-size: 0.9rem;
   border-radius: 6px;
   cursor: pointer;
   text-decoration: none;
-  background: linear-gradient(135deg, #37FD12, #0A6522); /* WhatsApp style gradient */
+  background: linear-gradient(135deg, #37FD12, #0A6522);
   color: white;
   border: none;
   font-weight: bold;
