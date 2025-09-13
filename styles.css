@@ -23,23 +23,23 @@ header {
 }
 
 /* ---------------- PRODUCT CARD ---------------- */
-.product {
+.product-card {
   background: #fefefe;
-  border: 2px solid black;
-  border-radius: 8px;
+  border: 2px solid #333;       /* dark grey border */
+  border-radius: 10px;          /* slightly rounded corners */
   padding: 0.75rem;
   text-align: center;
   font-size: 0.9rem;
   transition: transform 0.2s ease;
 }
 
-.product:hover {
+.product-card:hover {
   transform: translateY(-3px);
 }
 
-.product img {
+.product-card img {
   width: 100%;
-  border-radius: 6px;
+  border-radius: 8px;           /* slight rounding for images */
   margin-bottom: 0.5rem;
 }
 
@@ -58,7 +58,6 @@ header {
   font-weight: bold;
   transition: 0.2s ease;
 }
-
 
 .inquire-btn:hover {
   opacity: 0.9;
