@@ -29,36 +29,38 @@ header {
   background: #fefefe;
   border: 2px solid #333;       /* dark grey border */
   border-radius: 10px;          /* slightly rounded corners */
-  padding: 0.75rem;
   text-align: center;
   font-size: 0.9rem;
   transition: transform 0.2s ease;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .product-card:hover {
   transform: translateY(-3px);
 }
 
+/* ---------------- PRODUCT IMAGE ---------------- */
 .product-card img {
   width: 100%;
-  height: auto;                 /* keep proportions */
-  max-height: 200px;            /* keep consistent sizing */
+  height: 200px;               /* fixed height for all images */
   object-fit: contain;          /* show whole image */
   border-radius: 8px;
   margin-bottom: 0.5rem;
-  background: #f0f0f0;          /* light grey background for images with whitespace */
-  padding: 4px;                 /* small padding around image */
+  background: #f0f0f0;          /* light grey background */
+  padding: 4px;
   box-sizing: border-box;
 }
 
 /* ---------------- INQUIRE BUTTON ---------------- */
 .inquire-btn {
-  display: inline-block;        /* not full width */
-  width: 90%;                   /* slightly smaller than card */
-  margin: 0.5rem auto 0;        /* center it */
-  padding: 0.5rem;
-  font-size: 0.9rem;
+  display: inline-block;
+  width: 80%;                   /* slightly smaller */
+  margin: 0.5rem auto 0;
+  padding: 0.45rem;             /* smaller padding */
+  font-size: 0.85rem;           /* slightly smaller text */
   border-radius: 6px;
   cursor: pointer;
   text-decoration: none;
@@ -77,6 +79,4 @@ header {
 /* ---------------- MOBILE FIX ---------------- */
 @media (max-width: 600px) {
   .product-grid {
-    grid-template-columns: 2fr; /* 2 per row on small screens */
-  }
-}
+    grid-te
