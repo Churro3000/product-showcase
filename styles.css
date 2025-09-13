@@ -9,7 +9,7 @@ body {
 /* ---------------- HEADER ---------------- */
 header {
   padding: 1rem;
-  background: linear-gradient(135deg, #1E88E5, #2962FF); /* light blue gradient */
+  background: linear-gradient(135deg, #1E88E5, #2962FF);
   color: white;
   text-align: center;
 }
@@ -17,7 +17,7 @@ header {
 /* ---------------- PRODUCT GRID ---------------- */
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 per row */
+  grid-template-columns: repeat(2, 1fr); /* 2 per row for desktop */
   gap: 1rem;
   padding: 1rem;
   max-width: 1200px;
@@ -36,6 +36,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0.75rem;
 }
 
 .product-card:hover {
@@ -45,11 +46,11 @@ header {
 /* ---------------- PRODUCT IMAGE ---------------- */
 .product-card img {
   width: 100%;
-  height: 200px;               /* fixed height for all images */
-  object-fit: contain;          /* show whole image */
+  height: 200px;               /* consistent height */
+  object-fit: contain;          /* entire image visible */
   border-radius: 8px;
-  margin-bottom: 0.5rem;
-  background: #f0f0f0;          /* light grey background */
+  margin-bottom: 1rem;          /* more space below image */
+  background: #f0f0f0;
   padding: 4px;
   box-sizing: border-box;
 }
@@ -57,10 +58,9 @@ header {
 /* ---------------- INQUIRE BUTTON ---------------- */
 .inquire-btn {
   display: inline-block;
-  width: 80%;                   /* slightly smaller */
-  margin: 0.5rem auto 0;
-  padding: 0.45rem;             /* smaller padding */
-  font-size: 0.85rem;           /* slightly smaller text */
+  width: auto;                  /* smaller than card */
+  padding: 0.5rem 1rem;         /* slightly larger padding for visibility */
+  font-size: 0.85rem;
   border-radius: 6px;
   cursor: pointer;
   text-decoration: none;
@@ -69,6 +69,7 @@ header {
   border: none;
   font-weight: bold;
   transition: 0.2s ease;
+  margin-top: 0.75rem;          /* space between button and product content */
 }
 
 .inquire-btn:hover {
@@ -79,4 +80,16 @@ header {
 /* ---------------- MOBILE FIX ---------------- */
 @media (max-width: 600px) {
   .product-grid {
-    grid-te
+    grid-template-columns: repeat(2, 1fr); /* 2 per row on mobile */
+    gap: 0.75rem;
+  }
+
+  .product-card img {
+    height: 150px;              /* slightly smaller on mobile */
+  }
+
+  .inquire-btn {
+    font-size: 0.8rem;
+    padding: 0.45rem 0.9rem;
+  }
+}
