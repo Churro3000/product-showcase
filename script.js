@@ -1,6 +1,6 @@
 // ---------------- CONFIG ----------------
 // Replace with your shop's WhatsApp number in international format (no + or spaces)
-const shopNumber = "2677166187";
+const shopNumber = "26771665187";
 
 // List of product image filenames (1 to 55)
 const products = [
