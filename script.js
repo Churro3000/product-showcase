@@ -21,20 +21,30 @@ const products = [
 const productGrid = document.querySelector(".product-grid");
 
 products.forEach((file, index) => {
-  const productName = `Product ${index + 1}`;
-  const inquireLink = `https://wa.me/${shopNumber}?text=${encodeURIComponent(
-    `Hi, I would like to inquire about ${productName}`
-  )}`;
+  const productName = `PRODUCT ${index + 1}`;
 
   const productCard = document.createElement("div");
-  productCard.classList.add("product");
+  productCard.classList.add("product-card");
 
   productCard.innerHTML = `
     <img src="images/${file}" alt="${productName}">
-    <h2>${productName}</h2>
-    <p>Short description here.</p>
-    <a class="inquire-btn" href="${inquireLink}" target="_blank">Inquire Now</a>
+    <h2 class="product-name">${productName}</h2>
+    <a href="#" class="inquire-btn">Inquire Now</a>
   `;
 
   productGrid.appendChild(productCard);
+});
+
+// ---------------- WHATSAPP INQUIRY ----------------
+document.querySelectorAll(".product-card").forEach(card => {
+  const productName = card.querySelector(".product-name").innerText;
+  const btn = card.querySelector(".inquire-btn");
+
+  btn.addEventListener("click", (e) => {
+    e.preventDefault(); // stop default empty link
+    const message = `Hi, I would like to inquire about ${productName}`;
+    const encodedMsg = encodeURIComponent(message);
+    const waLink = `https://wa.me/${shopNumber}?text=${encodedMsg}`;
+    window.open(waLink, "_blank"); // open in new tab or WhatsApp app
+  });
 });
