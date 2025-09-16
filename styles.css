@@ -11,7 +11,8 @@ header {
   padding: 1rem;
   background: linear-gradient(135deg, #1E88E5, #2962FF);
   color: white;
-  text-align: center;
+  text-align: left;
+  text-size:30px;
 }
 
 /* ---------------- PRODUCT GRID ---------------- */
