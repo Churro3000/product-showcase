@@ -99,8 +99,8 @@ header {
 /* ---------------- FACEBOOK ---------------- */
 .facebook-btn {
   display: inline-block;
-  background: #1877f2;          /* Facebook blue */
-  color: #fff;
+  background: white;          /* Facebook blue */
+  color: #1877f2;
   border: none;
   padding: 0.5rem 1rem;
   font-size: 0.85rem;
