@@ -31,7 +31,7 @@ header {
   border: 2px solid #333;       /* dark grey border */
   border-radius: 10px;          /* slightly rounded corners */
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 0.6rem;
   transition: transform 0.2s ease;
   box-sizing: border-box;
   display: flex;
