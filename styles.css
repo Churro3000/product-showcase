@@ -95,3 +95,22 @@ header {
     padding: 0.45rem 0.9rem;
   }
 }
+
+/* ---------------- FACEBOOK ---------------- */
+.facebook-btn {
+  display: inline-block;
+  background: #1877f2;          /* Facebook blue */
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  border-radius: 6px;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s ease;
+}
+
+.facebook-btn:hover {
+  background: #145dbf;          /* darker on hover */
+}
