@@ -12,7 +12,7 @@ const products = [
   "product26.jpg", "product27.jpg", "product28.jpg", "product29.jpg", "product30.jpg",
   "product31.jpg", "product32.jpg", "product33.jpg", "product34.jpg", "product35.jpg",
   "product36.jpg", "product37.jpg", "product38.jpg", "product39.jpg", "product40.jpg",
-  "product41.jpg", "product42.jpg", "product43.jpg", "product44.jpg", "product45(1).jpg",
+  "product41.jpg", "product42.jpg", "product43.jpg", "product44.jpg", "product45.jpg",
   "product46.jpg", "product47.jpg", "product48.jpg", "product49.jpg", "product50.jpg",
   "product51.jpg", "product52.jpg", "product53.jpg", "product54.jpg", "product55.jpg"
 ];
