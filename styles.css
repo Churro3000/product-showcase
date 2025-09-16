@@ -114,3 +114,27 @@ header {
 .facebook-btn:hover {
   background: #145dbf;          /* darker on hover */
 }
+
+
+/* ------------------------ facebook top right --------------- */
+.facebook-logo {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  width: 32px;
+  height: 32px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.facebook-f {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  color: #1877f2;
+  font-size: 20px;
+  line-height: 1;
+}
